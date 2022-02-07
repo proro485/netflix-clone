@@ -24,7 +24,7 @@ export default function Row({ title, fetchUrl, isLarge = false }) {
                         return (
                             ((isLarge && element.poster_path) || (!isLarge && element.backdrop_path)) && <div className="movie_card" key={idx}>
                                 <img className={`${isLarge ? "isLarge" : "isSmall"}`}
-                                    src={isLarge ? `https://image.tmdb.org/t/p/original/${element.poster_path}`
+                                    src={isLarge ? `https://image.tmdb.org/t/p/w342/${element.poster_path}`
                                         : `https://image.tmdb.org/t/p/original/${element.backdrop_path}`}
                                     alt={element.name || element.title || element.original_name || element.original_title}
                                 />

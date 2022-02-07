@@ -8,6 +8,7 @@ export default function LoginScreen() {
     const [email, setEmail] = useState('');
 
     const handleSignIn = () => {
+        console.log('sign in');
         setSignIn(true);
     }
 
@@ -18,7 +19,7 @@ export default function LoginScreen() {
                     src={logo}
                     alt=""
                 />
-                <button className="loginScreen_loginButton" onClick={() => handleSignIn}>
+                <button className="loginScreen_loginButton" onClick={handleSignIn}>
                     Sign In
                 </button>
                 <div className="loginScreen_gradient" />

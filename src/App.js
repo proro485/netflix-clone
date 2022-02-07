@@ -9,6 +9,7 @@ import {
 import LoginScreen from './components/LoginScreen/LoginScreen';
 import { auth } from './firebase';
 import { useDispatch, useSelector } from 'react-redux';
+import ProfilePage from './components/ProfilePage/ProfilePage';
 
 function App() {
   const dispatch = useDispatch();
@@ -27,13 +28,14 @@ function App() {
   return (
     <div className="app">
       <Router>
-        <Routes>
-          {
-            !useSelector((store) => store.isLoggedIn) ?
-              <Route path='/' element={<LoginScreen />} /> :
+        {
+          !useSelector((store) => store.isLoggedIn) ?
+            <LoginScreen /> :
+            <Routes>
               <Route path='/' element={<HomeScreen />} />
-          }
-        </Routes>
+              <Route path='/profile' element={<ProfilePage />} />
+            </Routes>
+        }
       </Router>
     </div>
   );

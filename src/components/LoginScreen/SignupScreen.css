@@ -9,6 +9,7 @@
 }
 
 .signupScreen form {
+    display: -ms-grid;
     display: grid;
 }
 

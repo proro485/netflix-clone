@@ -27,7 +27,9 @@ export default function Navbar() {
                 <Link to='/'>
                     <img src={logo} className='nav_logo' alt="" />
                 </Link>
-                <img src={avatar} className='nav_avatar' alt="" />
+                <Link to='/profile'>
+                    <img src={avatar} className='nav_avatar' alt="" />
+                </Link>
             </div>
         </div>
     );
