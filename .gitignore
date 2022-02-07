@@ -13,6 +13,8 @@
 
 
 /.firebase
+./firebaserc
+./firebase.json
 /.vscode
 
 # misc
