@@ -1,0 +1,46 @@
+.row {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.movie_list {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 100px;
+    padding: 20px;
+}
+
+.movie_list_large {
+    height: 300px;
+}
+
+.movie_list::-webkit-scrollbar {
+    display: none;
+}
+
+.row_title {
+    color: white;
+}
+
+.isSmall {
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 2px;
+    transition: transform 450ms;
+}
+
+.isSmall:hover {
+    transform: scale(1.08);
+}
+
+.isLarge {
+    height: 300px;
+    margin-right: 10px;
+    border-radius: 2px;
+    transition: transform 450ms;
+}
+
+.isLarge:hover {
+    transform: scale(1.09);
+}
