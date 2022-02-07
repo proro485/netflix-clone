@@ -1,0 +1,99 @@
+.loginScreen {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: url('https://149695847.v2.pressablecdn.com/wp-content/uploads/2019/04/ntflxx.png') center no-repeat;
+    background-size: cover;
+}
+
+.loginScreen_logo {
+    position: fixed;
+    left: 0;
+    width: 150px;
+    padding-left: 20px;
+}
+
+.loginScreen_loginButton {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-size: 1rem;
+    background-color: #e50914;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+
+.loginScreen_gradient {
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top,
+            rgba(0, 0, 0, 0.8) 0,
+            rgba(0, 0, 0, 0) 60%,
+            rgba(0, 0, 0, 0.8) 100%);
+    width: 100vw;
+    z-index: 1;
+    height: 100vh;
+}
+
+.loginScreen_body {
+    position: absolute;
+    top: 28%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.loginScreen_body>h1 {
+    color: white;
+    font-size: 3.125rem;
+    text-shadow: 0 0 10px black;
+}
+
+.loginScreen_body>h2 {
+    color: white;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 2rem;
+    text-shadow: 0 0 10px black;
+}
+
+.loginScreen_body>h3 {
+    color: white;
+    margin: 20px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-shadow: 0 0 10px black;
+}
+
+.loginScreen_input {
+    margin-top: 30px;
+}
+
+.loginScreen_input input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 30%;
+    max-width: 600px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-right: 0;
+}
+
+.loginScreen_input button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #e50914;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 0;
+}

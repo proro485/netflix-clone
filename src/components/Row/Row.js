@@ -7,7 +7,6 @@ export default function Row({ title, fetchUrl, isLarge = false }) {
 
     useEffect(() => {
         async function fetchData() {
-            console.log("isLarge", title, isLarge);
             const request = await axios.get(fetchUrl);
             setMovies(request.data.results);
             return request;
@@ -23,7 +22,7 @@ export default function Row({ title, fetchUrl, isLarge = false }) {
                 {
                     movies.length && movies.map((element, idx) => {
                         return (
-                            <div className="movie_card" key={idx}>
+                            ((isLarge && element.poster_path) || (!isLarge && element.backdrop_path)) && <div className="movie_card" key={idx}>
                                 <img className={`${isLarge ? "isLarge" : "isSmall"}`}
                                     src={isLarge ? `https://image.tmdb.org/t/p/original/${element.poster_path}`
                                         : `https://image.tmdb.org/t/p/original/${element.backdrop_path}`}

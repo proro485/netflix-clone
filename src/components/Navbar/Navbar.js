@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import logo from '../../assets/netflix.png';
 import avatar from '../../assets/avatar.jpeg';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     const [show, setShow] = useState(false);
@@ -23,7 +24,9 @@ export default function Navbar() {
     return (
         <div className={`navbar ${show && "navbar-black"}`}>
             <div className="nav_content">
-                <img src={logo} className='nav_logo' alt="" />
+                <Link to='/'>
+                    <img src={logo} className='nav_logo' alt="" />
+                </Link>
                 <img src={avatar} className='nav_avatar' alt="" />
             </div>
         </div>
