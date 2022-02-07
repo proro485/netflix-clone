@@ -12,10 +12,10 @@
 /build
 
 
-/.firebase
-./firebaserc
-./firebase.json
-/.vscode
+.firebase
+firebaserc
+firebase.json
+.vscode
 
 # misc
 .DS_Store
