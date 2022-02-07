@@ -8,6 +8,7 @@
     overflow-y: hidden;
     height: 160px;
     padding: 10px 20px;
+    scrollbar-width: none;
 }
 
 .movie_list_large {
